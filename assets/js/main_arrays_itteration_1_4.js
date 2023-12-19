@@ -1,44 +1,5 @@
-let array = [
-    18,
-    16,
-    80,
-    51,
-    47,
-    38,
-    95,
-    42,
-    68,
-    61,
-    34,
-    51,
-    20,
-    17,
-    56,
-    31,
-    100,
-    6,
-    5,
-    30,
-    74,
-    97,
-    28,
-    99,
-    91,
-    27,
-    73,
-    12,
-    92,
-    6,
-    27,
-    71,
-    26,
-    15,
-    78
-];
+let tempCelsius = [0, 25, 30, 34]
+console.log(tempCelsius);
 
-let multiplizieren = array.map(num => num *2)
-
-multiplizieren.sort(function(a, b) {
-    return a - b
-})
-console.log(multiplizieren);
+let tempFahrenheit = tempCelsius.map(temp => (temp * 9/5) + 32)
+console.log(tempFahrenheit);
